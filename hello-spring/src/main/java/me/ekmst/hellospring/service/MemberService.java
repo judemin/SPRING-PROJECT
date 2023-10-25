@@ -21,6 +21,7 @@ public class MemberService {
      */
     public Long join(Member member) {
 
+        System.out.println("Mem info " + member.getId() + " " + member.getName());
         validateDuplicateMember(member); // 중복 회원 검증
         memberRepository.save(member);
         return member.getId();

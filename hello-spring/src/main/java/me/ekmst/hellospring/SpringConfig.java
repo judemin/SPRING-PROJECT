@@ -1,10 +1,17 @@
 package me.ekmst.hellospring;
 
+import javax.persistence.EntityManager;
+import javax.sql.DataSource;
 import me.ekmst.hellospring.repository.*;
 import me.ekmst.hellospring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
 
 import javax.persistence.EntityManager;
 import javax.sql.DataSource;
